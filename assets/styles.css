@@ -1,0 +1,826 @@
+/* Variables */
+:root {
+    --MetWhite: #FFFFFF;
+    --MetBlue01: #01ACEE;
+    --MetBlue02: #1477BE;
+    --MetGray01: #F3F3F3;
+    --MetGray02: #4D4D4D;
+    --MetGray03: #E5E5E5;
+    --MetGray04: #494949;
+    --MetGray05: #333333;
+    --homepage: url(./images/homepage.jpg);
+    --banner2: url(./images/banner2.jpg);
+    --banner3: url(./images/banner3.jpg);
+    --font: 'Raleway', san-serif;
+}
+
+/* Large Desktop */
+
+.main-container{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 844px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    font-family: var(--font);
+}
+
+/* Custom clases */
+.radius {
+    border-radius: 1.5rem;
+}
+
+.zindex-2 {
+    z-index: 2;
+}
+
+/* Navigation  */
+header {
+    z-index: 5;
+}
+
+header .navbar {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+header ul {
+    align-items: center;
+}
+
+header .nav-link {
+    font-family: var(--font);
+    font-weight: 700;
+    padding: 0 1.5rem;
+    color: var(--MetWhite) !important;
+}
+
+header .nav-link-button {
+    font-family: var(--font);
+    font-weight: 700;
+    padding: 0 1.5rem;
+    color: var(--MetBlue01) !important;
+}
+
+header a.active {
+    color: var(--MetBlue01) !important;
+}
+
+.navbar { 
+    padding-top: 0;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar-nav {
+    justify-content: flex-end;
+}
+
+#navbar-carousel .carousel-caption {
+    position: absolute;
+    right: 0rem;
+    padding-top: 1.25rem;
+    left: 12%;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: left;
+    top: 34%;
+    width: 47%;
+    font-family: var(--font);
+}
+
+#navbar-carousel .history-text-container {
+    /* This could change  */
+    height: 12%
+}
+
+.text-carousel {
+    font-size: 5rem;
+    margin-bottom: 3.5rem;
+}
+
+#navbar-carousel .carousel-indicators li {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+    margin-bottom: 17%;
+    opacity: 1;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--MetWhite) !important;
+    opacity: 1;
+}
+
+#navbar-carousel .carousel-indicators li.active {
+    background-color: var(--MetBlue01) !important;
+}
+
+#navbar-carousel .carousel-button {
+    font-size: 1.5rem;
+    width: 29%;
+    font-weight: 700;
+}
+
+/* Buttons  */
+.primary-button {
+    background-color: var(--MetBlue01) !important;
+    color: var(--MetWhite) !important;
+    border-radius: 1.5rem;
+    height: 50px;
+    font-family: var(--font);
+    border-style: none;
+}
+
+.secondary-button {
+    background-color: var(--MetWhite) !important;
+    color: var(--MetBlue01) !important;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 50px;
+    font-family: var(--font);
+    border-style: none;
+    width: 29%;
+}
+
+.button-call {
+    color: var(--MetBlue01) !important;
+    background-position: 15px 12px !important;
+    background: url(./images/Vector.png) no-repeat;
+    padding-left: 40px !important;
+    border: none;
+    height: 2.5rem;
+}
+
+/* What we do section styles */
+.what-we-do {
+    margin-bottom: 100px;
+}
+
+.what-we-do h1, .what-we-do h5  {
+    color: var(--MetBlue02);
+    font-weight: 700;
+}
+
+.what-we-do .card {
+    width: 370px;
+}
+
+.what-we-do .card-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+.what-we-do li {
+    margin-bottom: 1rem;
+}
+
+.what-we-do .card-button {
+    font-weight: 700;
+    width: 15rem;
+}
+
+.what-we-do .custom-card-footer {
+    margin: 4rem 0 4rem 0;
+}
+
+.what-we-do .carousel-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16rem;
+}
+
+.what-we-do .carousel-control-prev {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    opacity: 1;
+    background: var(--MetBlue01);
+    left: 2%;
+}
+
+footer i {
+    color: var(--MetBlue01);
+    margin-right: 5px;
+}
+
+.what-we-do .carousel-control-next {
+    background: black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    opacity: 1;
+    background: var(--MetBlue01);
+    right: 2%;
+}
+
+.what-we-do h1 {
+    font-size: 3rem;
+}
+
+.what-we-do .carousel-indicators {
+    /* This could change  */
+    height: 12%;
+    top:104%;
+}
+
+.what-we-do .carousel-indicators li.active {
+    background-color: var(--MetBlue02);
+}
+
+.what-we-do .carousel-indicators li {
+    background-color: var(--MetBlue01);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+/* History */
+.content-title {
+    color: var(--MetBlue02);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+}
+
+.subtitle {
+    color: var(--MetGray02);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.info-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 3rem;
+}
+
+.history-text-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+article {
+    padding: 0 6%;
+}
+
+.video {
+    border-radius: 2rem;
+    margin-top: 30px;
+}
+
+.video-watch {
+    color: var(--MetBlue02);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.circle {
+    background-color: var(--MetBlue01);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.main-info {
+    background: linear-gradient(180deg, var(--MetBlue01) 0%, var(--MetBlue02) 100%) !important;
+    background-size:cover !important;
+    color: var(--MetWhite);
+    height: auto;
+    width: auto !important;
+    padding: 0 9rem;
+}
+
+.collection-image {
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 236px;
+  }
+
+.collection-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.collection-background:hover {
+    background: rgba(0, 0, 0, 0.56);
+    transition: background .3s;
+}
+
+footer {
+    background: linear-gradient(180deg, var(--MetGray04) 0%, var(--MetGray05) 100%);
+}
+
+/* Desktop */
+@media (max-width:1366px) {
+    
+    .text-carousel {
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #navbar-carousel .carousel-button {
+        width: 35%;
+    }
+
+    #navbar-carousel .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 16%;
+    }
+
+    /* Article & Video */
+
+    /* Col-1 */
+    .history-text-container {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    article {
+        padding: 0%;
+    }
+
+    .content-title {
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+
+    .subtitle {
+        font-size: 1rem ;
+        font-weight: 700;
+    }
+
+    .info-title {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    /* Col-2 */
+
+    .video {
+        margin-top: 45px;
+        width: 80%;
+    }
+
+    .video-watch {
+        font-size: 1.8rem;
+    }
+
+    /* What We Do */
+
+    .what-we-do h1 {
+        font-size: 2rem;
+    }
+
+    .what-we-do .card-title {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .what-we-do .carousel-item {
+        padding: 0 11rem;
+    }
+
+    .what-we-do .carousel-indicators {
+        top: 105%;
+    }
+
+    .what-we-do .carousel-indicators li {
+        height: 20px;
+        width: 20px;
+    }
+
+    /* Services */
+
+    .service-tittle {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .main-info {
+        padding: 0 3rem;
+    }
+
+    .service-subtittle {
+        font-size: 2rem;
+    }
+
+}
+
+/* Tablet 1024px */
+@media (max-width:1024px) {
+    .text-carousel{
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    #navbar-carousel .carousel-button {
+        font-size: 1rem;
+        width: 35%;
+    }
+
+    #navbar-carousel .carousel-indicators li {
+        height: 15px;
+        width: 15px;
+        margin-bottom: 14%;
+    }
+
+    /* Article & Video */
+
+    /* Col-1 */
+    .history-text-container { 
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .content-title {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .content-title{
+        font-size: 0.8rem;
+    }
+
+    /* Col-2 */
+    .video {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .video-watch{
+        font-size: 1.2rem;
+    }
+
+    /* What We Do */
+
+    .card {
+        height: 49rem;
+    }
+
+    .card {
+        width: 210px;
+    }
+
+    .what-we-do .carousel-item {
+        padding: 0 9rem;
+    }
+
+    .what-we-do .carousel-control-prev{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .what-we-do .carousel-control-next {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .what-we-do .card-title {
+        font-size: 1.1rem ;
+    }
+
+    .what-we-do li {
+        font-size: 0.9rem;
+    }
+
+    .what-we-do .card-button {
+        width: 80%;
+    }
+
+    .icon {
+        width: 70%;
+    }
+
+    .circle {
+        background-color: var(--MetBlue01);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .service-tittle {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .secondary-button {
+        font-size: 1.1rem;
+        margin-top: -70px;
+    }
+
+}
+
+@media (max-width:960px) {
+    header .navbar {
+        background-color: white !important;
+    }
+
+    header ul {
+        align-items: flex-start !important;
+    }
+
+    header .nav-link {
+        color: var(--MetBlue01) !important;
+    }
+}
+
+/* Phone 816px*/
+@media (max-width:816px) {
+    .text-carousel{
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    #navbar-carousel .carousel-button {
+        font-size: 1rem;
+        width: 45%;
+    }
+
+    #navbar-carousel .carousel-indicators li {
+        height: 15px;
+        width: 15px;
+        margin-bottom: 13%;
+    }
+
+    /* Article & Video */
+
+    .history-text-container { 
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .content-title {
+        font-size: 0.7rem;
+        line-height: 17px;
+    }
+
+    .subtitle {
+        font-size: 0.6rem;
+    }
+
+    .info-title{
+        font-size: 0.6rem;
+    }
+
+    .video {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .video-watch{
+        font-size: 1.2rem;
+    }
+
+    /* What We Do */
+
+    .card {
+        height: 48rem;
+    }
+
+    .card {
+        width: 180px;
+    }
+
+    .what-we-do .carousel-item {
+        padding: 0 5rem;
+    }
+
+    .what-we-do .carousel-control-prev{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .what-we-do .carousel-control-next {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .what-we-do .card-title {
+        font-size: 1.1rem ;
+    }
+
+    .what-we-do li {
+        font-size: 0.9rem;
+    }
+
+    .what-we-do .card-button {
+        width: 80%;
+        margin-top: -70px;
+    }
+
+    .service-tittle {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .service-subtittle{
+        font-size: 1.5rem;
+    }
+
+    .secondary-button {
+        font-size: 1rem;
+        width: 38%;
+    }
+
+}
+
+/* Phone 425px */
+@media (max-width:425px) {
+
+    .what-we-do .carousel-inner {
+        overflow-x: scroll;
+    }
+
+    .what-we-do .card {
+        width: 20rem;
+    }
+
+    .what-we-do .carousel-control-prev, .what-we-do .carousel-control-next { 
+        display: none;
+    }
+
+    .what-we-do .carousel {
+        padding: 0;
+    }
+
+    .text-carousel{
+        margin-top: 20px;
+        font-size: 1rem;
+        margin-bottom: 7px;
+    }
+
+    #navbar-carousel .carousel-button {
+        font-size: 10px;
+        width: 40%;
+        height: 1.5rem;
+    }
+
+    #navbar-carousel .carousel-indicators li {
+        height: 10px;
+        width: 10px;
+        margin-bottom: 0%;
+        margin-left: -4px;
+    }
+
+    /* Article & Video */
+
+    .history-text-container { 
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .content-title {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .content-title{
+        font-size: 0.8rem;
+    }
+
+    .video {
+        width: 90%;
+        margin-top: -10px;
+    }
+
+    .video-watch{
+        font-size: 1rem;
+    }
+
+    /* What We Do */
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 21rem;
+        margin: 0 2rem;
+        height: 54rem;
+    }
+
+    .card {
+        width: 180px;
+        margin: 0 1rem;
+    }
+
+    .what-we-do h1 {
+        font-size: 1.5rem;
+        margin-bottom: -15px;
+    }
+    
+    .what-we-do .carousel-item {
+        padding: 0;
+    }
+
+    .what-we-do .carousel-control-prev{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .what-we-do .carousel-control-next {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .what-we-do .card-title {
+        font-size: 1.1rem ;
+    }
+
+    .what-we-do li {
+        font-size: 0.9rem;
+    }
+
+    .what-we-do .card-button {
+        width: 80%;
+        margin-top: -70px;
+    }
+
+    /* Services */
+
+    .service-tittle {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .service-subtittle{
+        font-size: 1.5rem;
+    }
+
+    .secondary-button {
+        font-size: 1rem;
+        width: 83%;
+    }
+
+}
